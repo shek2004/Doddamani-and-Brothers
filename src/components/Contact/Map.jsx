@@ -8,8 +8,8 @@ const containerStyle = {
 
 // Replace with your actual coordinates
 const center = {
-  lat: 15.3499, // Example latitude
-  lng: 75.1386  // Example longitude
+  lat: 15.432728115099382,
+  lng: 75.63467920898597
 }
 
 const Map = () => {
@@ -43,5 +43,6 @@ const Map = () => {
     </motion.section>
   )
 }
+
 
 export default Map
