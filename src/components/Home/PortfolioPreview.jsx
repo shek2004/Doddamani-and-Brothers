@@ -1,28 +1,11 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Eye, ArrowRight } from 'lucide-react'
+import projectsData from '../../data/projectsData'
 
 const PortfolioPreview = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "Modern Office Complex",
-      category: "Commercial",
-      image: "/src/assets/images/project1.jpg"
-    },
-    {
-      id: 2,
-      title: "Luxury Residence",
-      category: "Residential",
-      image: "/src/assets/images/project2.jpg"
-    },
-    {
-      id: 3,
-      title: "Shopping Mall",
-      category: "Commercial",
-      image: "/src/assets/images/project3.jpg"
-    }
-  ]
+  // Fetch only first 3 projects for preview
+  const projects = projectsData.slice(0, 3)
 
   return (
     <section className="py-20 bg-gray-50">
@@ -53,6 +36,7 @@ const PortfolioPreview = () => {
                 src={project.image}
                 alt={`${project.title} - ${project.category}`}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="text-center text-white">
