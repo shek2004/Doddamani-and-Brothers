@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import logoImg from '../../assets/images/logo.jpg'
 
 const Hero = () => {
   return (
     <section
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${logoImg})` }} // use imported image
+      style={{ backgroundImage: "url('https://res.cloudinary.com/dqojj8h2u/image/upload/v1759133176/Logo_yebaxd.webp')" }}
     >
       {/* Blurred background overlay */}
       <div className="absolute inset-0">
