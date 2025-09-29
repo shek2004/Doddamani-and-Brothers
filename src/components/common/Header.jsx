@@ -20,7 +20,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <img
-            src="/src/assets/images/logo.jpg"
+            src="https://res.cloudinary.com/dqojj8h2u/image/upload/v1759133176/Logo_yebaxd.webp"
             alt="Doddamani & Brothers Logo"
             className="h-10 w-10 rounded-full shadow-lg border-2 border-blue-400"
           />
